@@ -1,0 +1,128 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reset img */
+img{
+    width: 100%;
+}
+
+/* Slider */
+.slider{
+    width: 70%;
+    height: 50%;
+}
+
+/* Img container */
+.img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* Main img */
+.main-img{
+    width: 80%;
+    height: 100%;
+}
+
+.single-main-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+.single-main-img.active{
+    display: block;
+}
+
+.single-main-img img{
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+.single-main-img-text{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 90%;
+    color: white;
+    text-align: right;
+    display: none;
+}
+
+
+/* Thumb */
+.thumb{
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+
+.single-thumb {
+    height: 20%;
+    position: relative;
+}
+
+.single-thumb img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+}
+
+.overlay.active{
+    display: none;
+}
+
+.single-thumb.active{
+    border: 4px solid lightgray;
+}
+
+/* Chevron icon */
+.chevron-icon{
+    position: absolute;
+    color: #5a5a5a;
+    background-color: #cccccc;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.chevron-icon.chevron-up-icon{
+    top: 10px;
+    
+}
+
+.chevron-icon.chevron-down-icon{
+    bottom: 10px;
+
+}
